@@ -59,12 +59,7 @@ class ScreeningCommandTest {
         List<Screening> screeningList = new ArrayList<>();
         screeningList.add(screening);
 
-        //Mockito.when(screeningService.listScreenings()).thenReturn(screeningList);
-        //Mockito.when(movieService.getExistingMovieByTitle("asd")).thenReturn(optionalMovie);
-
-
         System.out.println(screeningCommand.listAllScreenings());
-        //assertEquals("asd (asd2, 127 minutes), screened in room joska, at 2021-11-29 17:00" ,screeningCommand.listAllScreenings());
 
     }
 

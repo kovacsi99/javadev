@@ -1,6 +1,5 @@
 package com.epam.training.ticketservice.util;
 
-import com.epam.training.ticketservice.core.config.AppConfig;
 import com.epam.training.ticketservice.core.movie.persistance.entity.Movie;
 import com.epam.training.ticketservice.core.screening.persistance.entity.Screening;
 
@@ -21,6 +20,6 @@ public class FormatUtil {
     }
 
     public static DateTimeFormatter getAppDateTimeFormatter() {
-        return DateTimeFormatter.ofPattern(AppConfig.getInstance().getProperties().getProperty("dateTimeFormat"));
+        return DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
     }
 }

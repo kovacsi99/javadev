@@ -17,7 +17,7 @@ public class SignInCommand extends SecuredCommand {
             return "Signed in.";
         } else {
             setAuthentication(false);
-            return "Login failed due to incorrect credentials.";
+            return "Login failed due to incorrect credentials";
         }
     }
 
@@ -25,15 +25,15 @@ public class SignInCommand extends SecuredCommand {
     @ShellMethod(key = "sign out", value = "Sign out.")
     public String signOut() {
         setAuthentication(false);
-        return "Signed out, mate.";
+        return "You are not signed in";
     }
 
     @ShellMethod(key = "describe account", value = "Describes the account.")
     public String describeAccount() {
         if (isAuthentication()) {
-            return "Signed in with privileged account admin";
+            return "Signed in with privileged account 'admin'";
         } else {
-            return "You are not signed in.";
+            return "You are not signed in";
         }
     }
 
